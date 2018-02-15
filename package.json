@@ -1,0 +1,23 @@
+{
+  "name": "musicplayerapp",
+  "version": "1.0.0",
+  "description": "Easy Cross-Platform Music Player Desktop Application",
+  "main": "main.js",
+  "scripts": {
+    "react": "parcel src/index.html",
+    "electron": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Worameth Semapat",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.8.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.5.1"
+  }
+}
