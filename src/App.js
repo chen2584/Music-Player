@@ -1,5 +1,6 @@
 import React from 'react';
-//import * as electron from 'electron';
+import './css/App.css';
+
 const electron = window.require('electron');
 const remote = electron.remote;
 export default class MainPage extends React.Component {
@@ -25,6 +26,9 @@ export default class MainPage extends React.Component {
                 สวัสดี ที่นี่หน้า MainPage
                 <button onClick={this.showErrorDialog}>Show Error Dialog</button>
                 <button onClick={this.showName("Chen")}>Show Name</button>
+                <div className="bgColor">สวัสดี</div>
+                <div className="bgColor2">สวัสดี</div>
+                <div>Rose are <span style={{ color: 'red' }}>red</span>. Violet are <span style={{ color: 'blue'}}>blue</span></div>
             </dir>
         );
     }
