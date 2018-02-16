@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "react": "parcel src/index.html",
-    "electron": "electron .",
+    "react-build": "parcel build src/index.html",
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Worameth Semapat",
@@ -13,10 +14,18 @@
   "dependencies": {
     "electron": "^1.8.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-howler": "^3.7.1"
   },
   "devDependencies": {
     "babel-preset-react-app": "^3.1.1",
+    "babel-preset-stage-0": "^6.24.1",
     "parcel-bundler": "^1.5.1"
-  }
+  },
+  "files": [
+    "*.js",
+    "*.mp3",
+    "dist",
+    "node_modules"
+  ]
 }

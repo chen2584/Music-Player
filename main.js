@@ -7,6 +7,11 @@ let mainWindow;
 app.on('ready', function() {
     mainWindow = new BrowserWindow({});
     mainWindow.loadURL("http://localhost:1234");
+    /*mainWindow.loadURL(url.format({
+        pathname: path.join(__dirname, "dist/index.html"),
+        protocol: 'file:',
+        slashes: true
+    }));*/
 
     mainWindow.on('closed', function() {
         app.quit();
