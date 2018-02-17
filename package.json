@@ -15,17 +15,13 @@
     "electron": "^1.8.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-howler": "^3.7.1"
+    "react-player": "^1.1.2"
   },
   "devDependencies": {
     "babel-preset-react-app": "^3.1.1",
     "babel-preset-stage-0": "^6.24.1",
-    "parcel-bundler": "^1.5.1"
-  },
-  "files": [
-    "*.js",
-    "*.mp3",
-    "dist",
-    "node_modules"
-  ]
+    "electron-packager": "^11.0.1",
+    "parcel-bundler": "^1.5.1",
+    "react-hot-loader": "^3.1.3"
+  }
 }
