@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactPlayer from 'react-player';
 import './css/App.css';
 
 const path = require('path');
@@ -31,10 +30,6 @@ export default class MainPage extends React.PureComponent {
         slashes: false
     });
     //player = new Player("./music.mp3");
-
-    componentDidMount() {
-        ReactPlayer.canPlay("https://www.youtube.com/watch?v=ysz5S6PUM-U");
-    }
     
     render() {
         console.log(this.musicURL);
@@ -46,9 +41,6 @@ export default class MainPage extends React.PureComponent {
                 <div className="bgColor">สวัสดี</div>
                 <div className="bgColor2">สวัสดี</div>
                 <div>Rose are <span style={{ color: 'red' }}>red</span>. Violet are <span style={{ color: 'blue'}}>blue</span></div>
-                <audio controls>
-                    <source src={this.musicURL} type="audio/mpeg" />
-                 </audio>
             </dir>
         );
     }
